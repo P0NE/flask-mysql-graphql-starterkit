@@ -1,3 +1,7 @@
 flask-mysql-graphql-starterKit
 
-sudo docker container run --rm -it --network=host -p 5000:5000 flask-mysql-graphql-starterkit
+Starter kit for every new web app using flask mysql and graphql 
+
+for launching the startkit:
+
+docker-compose up --build
