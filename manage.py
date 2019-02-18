@@ -3,7 +3,7 @@ from app import create_app
 
 app = create_app()
 manager = Manager(app)
-manager.add_command("runserver", Server)
+manager.add_command("runserver", Server(host='0.0.0.0', port=5000, threaded=True))
 
-if (__name__ == "__main__"):
+if __name__ == "__main__":
     manager.run()
